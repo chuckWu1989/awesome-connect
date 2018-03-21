@@ -1,7 +1,7 @@
 {
-  "name": "chuck-starterkit",
-  "version": "0.1.2",
-  "description": "Chuck Starter Kit",
+  "name": "awesome-connect",
+  "version": "0.0.0",
+  "description": "Awesome Redux Connect",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -10,9 +10,9 @@
   "author": "Chuck Wu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/d9767192/chuck-starterkit/issues"
+    "url": "https://github.com/d9767192/awesome-connect/issues"
   },
-  "homepage": "https://github.com/d9767192/chuck-starterkit#readme",
+  "homepage": "https://github.com/d9767192/awesome-connect#readme",
   "browserslist": [
     "Last 2 versions"
   ],
@@ -29,7 +29,7 @@
     "build:lib": "rimraf lib && npm run build:lib:cjs && npm run build:lib:copy && npm run build:lib:umd",
     "build:lib:cjs": "node build/scripts/cjsPublisher.js",
     "build:lib:copy": "node build/scripts/copyFiles.js",
-    "build:lib:umd": "node build/scripts/compile --config umd.webpack.config.js --libname counter",
+    "build:lib:umd": "node build/scripts/compile --config umd.webpack.config.js --libname awesomeConnect",
     "release": "np --no-publish --any-branch --no-cleanup",
     "changelog": "auto-changelog --template keepachangelog"
   },
