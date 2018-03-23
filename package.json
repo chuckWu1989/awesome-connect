@@ -17,7 +17,6 @@
     "Last 2 versions"
   ],
   "scripts": {
-    "start": "cross-env NODE_ENV=development node build/scripts/start --sourcemaps --indir app",
     "test": "npm run test:lint && npm run test:unit",
     "test:unit": "cross-env NODE_ENV=test jest --config build/configs/jest.config.js",
     "test:unit:watch": "npm run test:unit -- --watch",
