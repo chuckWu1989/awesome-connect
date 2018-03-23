@@ -14,8 +14,8 @@
     }
   },
   "plugins": [
-    "react-hot-loader/babel",
     "syntax-dynamic-import",
+    "transform-es2015-modules-commonjs",
     ["transform-object-rest-spread", { "useBuiltIns": true }],
     "transform-decorators-legacy",
     "transform-class-properties"

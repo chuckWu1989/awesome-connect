@@ -71,7 +71,6 @@ module.exports = {
   /** The list of modules to bundle separately from the core application code */
   vendors: [
     'react',
-    'react-dom',
     'prop-types',
   ],
   /** Files to be copied into publish folder */

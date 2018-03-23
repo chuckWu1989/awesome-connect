@@ -38,11 +38,13 @@ const compile = () => Promise.resolve()
   .then(() => logger.info(`Target application environment: ${chalk.bold(project.env)}`))
   .then(() => runWebpackCompiler(webpackConfig))
   .then((stats) => {
-    logger.info(`Copying static assets from ./public to ./${project.outDir}.`);
-    fs.copySync(
-      path.inProject('public'),
-      path.inProject(project.outDir)
-    );
+    if (fs.existsSync(path.inProject('public'))) {
+      logger.info(`Copying static assets from ./public to ./${project.outDir}.`);
+      fs.copySync(
+        path.inProject('public'),
+        path.inProject(project.outDir)
+      );
+    }
     return stats;
   })
   .then((stats) => {
