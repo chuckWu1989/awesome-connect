@@ -1,3 +1,3 @@
-import Counter from './view/Counter';
+import { connect } from './controllers/connectController';
 
-export default Counter;
+export default connect;

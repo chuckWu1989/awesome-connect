@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`enhancer hoc should render properly 1`] = `
+<_class
+  model={
+    EnhancerModel {
+      "getId": ModelItem {},
+      "getName": ModelItem {},
+      "mergeProps": ModelItem {},
+      "name": ModelItem {},
+    }
+  }
+/>
+`;
+
+exports[`enhancer model should define properties properly 1`] = `
+EnhancerModel {
+  "getId": ModelItem {},
+  "getName": ModelItem {},
+  "mergeProps": ModelItem {},
+  "name": ModelItem {},
+}
+`;

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`router should render properly 1`] = `
+<WrappedComponent
+  default="test"
+  test="test2"
+/>
+`;
+
+exports[`router should render properly if method is not defined 1`] = `
+<WrappedComponent
+  test="test2"
+/>
+`;

@@ -31,12 +31,12 @@ config.module.rules.push({
     babelrc: false,
     presets: [
       ['env', { modules: false }],
+      'stage-0',
       'react'
     ],
     plugins: [
       'syntax-dynamic-import',
-      ['transform-object-rest-spread', { useBuiltIns: true }],
-      ['transform-class-properties', { spec: true }]
+      'transform-decorators-legacy'
     ]
   },
 });

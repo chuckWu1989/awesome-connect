@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`connect connect should return a connected component if component is a function 1`] = `
+<_class
+  getId={[Function]}
+  getName={[Function]}
+  mergeProps={[Function]}
+/>
+`;

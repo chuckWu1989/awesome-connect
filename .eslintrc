@@ -23,8 +23,10 @@
   "rules": {
     "import/no-extraneous-dependencies": "off",
     "jsx-a11y/anchor-is-valid": "off",
+    "react/prop-types": "off",
+    "function-paren-newline": ["error", "consistent"],
+    "no-console": "off",
     "react/jsx-filename-extension": ["warn", { "extensions": [".js"] }],
-    "quotes": ["error", "single"],
-    "semi": ["error", "always"]
+    "quotes": ["error", "single"]
   }
 }
