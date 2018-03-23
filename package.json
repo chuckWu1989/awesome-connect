@@ -24,7 +24,6 @@
     "test:lint:fix": "npm run test:lint -- --fixlint",
     "test:lint:report": "npm run test:lint -- --outputlint",
     "test:coverage": "npm run test:unit -- --coverage",
-    "build": "cross-env NODE_ENV=production node build/scripts/compile --indir app",
     "build:lib": "rimraf lib && npm run build:lib:cjs && npm run build:lib:copy && npm run build:lib:umd",
     "build:lib:cjs": "node build/scripts/cjsPublisher.js",
     "build:lib:copy": "node build/scripts/copyFiles.js",
