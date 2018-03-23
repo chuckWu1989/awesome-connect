@@ -106,15 +106,15 @@ describe('connect', () => {
     });
     it('should return a connected component if component is a function', () => {
       const component = () => <div />;
+      component.defaultProps = { default: 'test' };
       const ConnectComponent = controller.connect()()(component);
       const tree = toJson(shallow(<ConnectComponent />));
       expect(tree).toMatchSnapshot();
     });
     it('should include type if type is defined', () => {
       const component = () => <div />;
-      const defaultProps = {};
       const type = { default: 'test', test: 'test2' };
-      const ConnectComponent = controller.connect()()(component, defaultProps, type);
+      const ConnectComponent = controller.connect()()(component, type);
       expect('default' in ConnectComponent && 'test' in ConnectComponent).toBeTruthy();
     });
   });

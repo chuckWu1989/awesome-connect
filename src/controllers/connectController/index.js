@@ -27,7 +27,7 @@ export const getMergeProps = (mergeProps, defaultProps) => (
 );
 export const connect = store => (
   (mapStateToProps = null, mapDispatchToProps = null, mergeProps = null) => (
-    (component, defaultProps = {}, type = {}) => {
+    (component, type = {}) => {
       if (typeof component !== 'function') {
         const error = new TypeError('The component must be a function', 'connect');
         if (process.env.NODE_ENV !== 'production') {
@@ -35,6 +35,7 @@ export const connect = store => (
         }
         throw error;
       }
+      const { defaultProps = {} } = component;
       const newMapStateToProps = getMapStateToProps(mapStateToProps, defaultProps);
       const newMapDispatchToProps = getMapDispatchToProps(mapDispatchToProps, defaultProps);
       const newMergeProps = getMergeProps(mergeProps, defaultProps);
